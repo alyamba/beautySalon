@@ -9,10 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Login">
-   <children>
-      <Label alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" depthTest="DISABLE" nodeOrientation="LEFT_TO_RIGHT" prefHeight="120.0" prefWidth="900.0" style="-fx-background-color: #C91959;" text="Привет, зайди в свой аккаунт!" textAlignment="CENTER" textFill="WHITE">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.Login">
+   <children>  
+      <Label alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" depthTest="DISABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="900.0" style="-fx-background-color: #C91959;" text="Привет, зайди в свой аккаунт!" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -20,7 +19,7 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </Label>
-      <VBox alignment="CENTER" prefHeight="170.0" prefWidth="600.0">
+      <VBox alignment="CENTER" prefWidth="600.0">
          <children>
             <TextField fx:id="userName" promptText="Логин">
                <padding>
@@ -40,13 +39,19 @@
             </PasswordField>
          </children>
          <padding>
-            <Insets left="100.0" right="100.0" />
+            <Insets left="100.0" right="100.0" top="30.0" />
          </padding>
       </VBox>
-      <Button fx:id="loginBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#authorization" style="-fx-background-color: #ec5270;" text="Войти" textFill="WHITE">
+      <Button fx:id="loginBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#authorization" style="-fx-background-color: #C91959;" text="Войти" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </VBox.margin>
       </Button>
    </children>
 </VBox>
