@@ -7,9 +7,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<fx:root prefHeight="600.0" prefWidth="900.0" type="HBox" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.MainController">
+<HBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.MainController">
    <children>
       <VBox prefHeight="200.0" prefWidth="600.0">
          <children>
@@ -24,38 +23,38 @@
             <Line endX="515.2929077148438" endY="-0.20710371434688568" startX="-100.0" stroke="#d4d4d4" />
             <VBox prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Text fx:id="firstName" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя: Алина">
+                  <Label fx:id="firstName" text="Имя: ">
                      <font>
                         <Font size="16.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
+                        <Insets bottom="5.0" top="5.0" />
                      </VBox.margin>
-                  </Text>
-                  <Text fx:id="lastName" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия: Логунова">
+                  </Label>
+                  <Label fx:id="lastName" text="Фамилия">
                      <font>
                         <Font size="16.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
+                        <Insets bottom="5.0" top="5.0" />
                      </VBox.margin>
-                  </Text>
-                  <Text fx:id="userPhone" strokeType="OUTSIDE" strokeWidth="0.0" text="Телефон: +375290000000">
+                  </Label>
+                  <Label fx:id="userPhone" text="Телефон: ">
                      <font>
                         <Font size="16.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
+                        <Insets bottom="5.0" top="5.0" />
                      </VBox.margin>
-                  </Text>
-                  <Text fx:id="userEmail" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: admin@gmail.com">
+                  </Label>
+                  <Label fx:id="userEmail" text="Email: ">
                      <font>
                         <Font size="16.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
+                        <Insets bottom="5.0" top="5.0" />
                      </VBox.margin>
-                  </Text>
+                  </Label>
                </children>
                <VBox.margin>
                   <Insets />
@@ -71,7 +70,7 @@
       </VBox>
       <VBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="300.0" style="-fx-background-color: #C91959;">
          <children>
-            <Button fx:id="chooseService" mnemonicParsing="false" style="-fx-background-color: none;" text="Оформить услугу" textFill="WHITE">
+            <Button fx:id="chooseService" mnemonicParsing="false" onAction="#chooseService" style="-fx-background-color: none;" text="Оформить услугу" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -79,7 +78,7 @@
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="viewServiceHistory" mnemonicParsing="false" style="-fx-background-color: none;" text="Посмотреть историю услуг" textFill="WHITE">
+            <Button fx:id="viewServiceHistory" mnemonicParsing="false" onAction="#viewServiceHistory" style="-fx-background-color: none;" text="Посмотреть историю услуг" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -87,7 +86,7 @@
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="logout" mnemonicParsing="false" style="-fx-background-color: none;" text="Выход из аккаунта" textFill="WHITE">
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: none;" text="Выход из аккаунта" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -104,4 +103,4 @@
          </padding>
       </VBox>
    </children>
-</fx:root>
+</HBox>
