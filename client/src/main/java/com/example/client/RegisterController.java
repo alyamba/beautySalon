@@ -2,23 +2,28 @@ package com.example.client;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class Login {
+public class RegisterController {
 
     @FXML
-    private Button loginBtn;
+    private TextField email;
 
     @FXML
-    private TextField userName;
+    private TextField firstName;
+
+    @FXML
+    private TextField lastName;
+
+    @FXML
+    private TextField phoneNumber;
 
     @FXML
     private PasswordField userPassword;
 
     @FXML
-    void authorization(ActionEvent event) {
+    void registration(ActionEvent event) {
 
     }
 
