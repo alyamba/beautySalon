@@ -45,8 +45,18 @@ public class MainController {
     }
 
     @FXML
-    void logout(ActionEvent event) {
+    void logout(ActionEvent event) throws Exception{
+        System.out.println("method sessionEndWarning");
 
+        FXMLLoader loader = new FXMLLoader(LoginController.class.getResource("sessionEndWarning.fxml"));
+
+        root = loader.load();
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+
+        stage.show();
     }
 
     @FXML

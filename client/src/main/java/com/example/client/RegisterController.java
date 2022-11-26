@@ -53,7 +53,7 @@ public class RegisterController {
         root = loader.load();
 
         MainController mainController = loader.getController();
-        mainController.displayInfoAboutUser(userFirstName, userLastName, userPhone, userEmail);
+        mainController.displayInfoAboutUser(userFirstName, userLastName, userEmail, userPhone);
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
