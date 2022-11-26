@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -30,6 +31,9 @@ public class RegisterController {
     @FXML
     private PasswordField userPassword;
 
+    @FXML
+    private Hyperlink linkToLoginWindow;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -50,6 +54,21 @@ public class RegisterController {
 
         MainController mainController = loader.getController();
         mainController.displayInfoAboutUser(userFirstName, userLastName, userPhone, userEmail);
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+
+        stage.show();
+    }
+
+    @FXML
+    void goToLogin(ActionEvent event) throws Exception{
+        System.out.println("method goToLogin");
+
+        FXMLLoader loader = new FXMLLoader(LoginController.class.getResource("login.fxml"));
+
+        root = loader.load();
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
