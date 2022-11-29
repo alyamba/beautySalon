@@ -1,6 +1,6 @@
 package org.example.message;
 
-import org.example.command.Command;
+import org.example.command.CommandEnum;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -10,13 +10,13 @@ public class Message<T> implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Map<String, T> request;
-    private Command command;
+    private CommandEnum command;
 
     public Message() {
         this.request = new HashMap<>();
     }
 
-    public Message(Map<String, T> request, Command command) {
+    public Message(Map<String, T> request, CommandEnum command) {
         this.request = request;
         this.command = command;
     }
@@ -30,12 +30,12 @@ public class Message<T> implements Serializable {
         return this.request.get(key);
     }
 
-    public Command getCommand() {
+    public CommandEnum getCommand() {
         return command;
     }
 
     ///
-    public void setCommand(Command command) {
+    public void setCommand(CommandEnum command) {
         this.command = command;
     }
 
