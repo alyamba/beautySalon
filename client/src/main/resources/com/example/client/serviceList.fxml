@@ -58,7 +58,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="viewServiceHistory" mnemonicParsing="false" onAction="#viewServiceHistory" style="-fx-background-color: none;" text="Посмотреть историю услуг" textFill="WHITE">
+            <Button fx:id="viewServiceHistory" mnemonicParsing="false" onAction="#viewServiceHistory" style="-fx-background-color: none; -fx-underline: true;" text="Посмотреть историю услуг" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
