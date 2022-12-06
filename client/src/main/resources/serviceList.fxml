@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.ServiceListController">
+   <children>
+      <TableView fx:id="table" prefHeight="600.0" prefWidth="536.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="129.0" text="id" />
+          <TableColumn fx:id="nameCol" prefWidth="206.0" text="Название" />
+            <TableColumn fx:id="priceCol" prefWidth="200.0" text="Цена" />
+        </columns>
+         <HBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </HBox.margin>
+      </TableView>
+   </children>
+</HBox>

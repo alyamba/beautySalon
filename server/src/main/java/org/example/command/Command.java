@@ -1,13 +1,12 @@
 package org.example.command;
 
-import org.example.message.Message;
+
+import org.json.simple.JSONObject;
 
 import java.io.Serializable;
 
 
 public interface Command extends Serializable {
-
-    Message execute(Message request);
-
+    JSONObject execute();
 }
 

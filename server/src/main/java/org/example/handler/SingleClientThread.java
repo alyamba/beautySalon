@@ -1,6 +1,7 @@
 package org.example.handler;
 
-import org.example.message.Message;
+import org.example.command.RequestChecker;
+import org.json.simple.JSONObject;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -25,10 +26,13 @@ public class SingleClientThread extends Thread{
             while (socket.isConnected()) {
                 System.out.println("Пользователь с IP " + socket.getInetAddress().getHostName() + " в ожидании ответа");
 
-                Message message = (Message) is.readObject();
-                System.out.println(message);
+                JSONObject requestObject = (JSONObject) is.readObject();
+                System.out.println(requestObject);
 
-//                new RequestChecker(json);
+
+                RequestChecker requestChecker = new RequestChecker(requestObject);
+                JSONObject sendingObject = requestChecker.executingCommand();
+                send(sendingObject);
             }
         } catch (IOException e) {
             try {
@@ -42,9 +46,9 @@ public class SingleClientThread extends Thread{
         }
     }
 
-    public static void send(String message) {
+    public static void send(JSONObject sendingObject) {
         try {
-            os.writeObject(message + "\n");
+            os.writeObject(sendingObject);
             os.flush();
         } catch (IOException e) {
             e.printStackTrace();

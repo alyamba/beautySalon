@@ -4,13 +4,20 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/?user=root</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/salondb</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="show_sql">true</property>
         <property name="connection.username">root</property>
         <property name="connection.password">1234йцук</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="org.example.model.UserEntity"/>
+        <mapping class="org.example.model.Category"/>
+        <mapping class="org.example.model.Selection"/>
+        <mapping class="org.example.model.OrderOption"/>
+        <mapping class="org.example.model.OrderInfo"/>
+
 
 <!--         DB schema will be updated if needed -->
-         <property name="hibernate.hbm2ddl.auto">update</property>
+
     </session-factory>
 </hibernate-configuration>
