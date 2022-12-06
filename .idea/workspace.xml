@@ -5,85 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1389bfcb-dd54-4ce2-8806-1bf4311d352a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/connection/ConnectionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/container/SceneContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/model/OrderSelection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/model/Selection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/AddProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/resources/addProduct.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/RequestChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/factory/CommandFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/AddProductCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/GetAllUsersCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/GetCategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/GetOptionsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/GetPersonalOrdersCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/MakeOrderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/MissedCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/SignInCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/SignUpCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/model/OrderInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/model/OrderOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/model/Selection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/model/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/service/OptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/service/OrderInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/service/OrderItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/service/SelectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/com/example/client/css/Montserrat-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/com/example/client/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_11_5_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/ChooseServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SignInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/MainAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MasterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/ServiceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/SessionEndWarningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SessionEndWarningController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ShowUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/ViewingYourServicesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ServiceListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/chooseService.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/order.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/item.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/signIn.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/mainAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/mainAdmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/masterControl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/masterControl.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/signUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/serviceControl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/serviceControl.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/serviceList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/serviceList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/sessionEndWarning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/sessionEndWarning.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/userControl.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/showUsers.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/factory/CommandFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/handler/SingleClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/handler/SingleClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/message/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/example/handler/SingleClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/org/example/handler/SingleClientThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/example/message/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/signIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/example/client/signIn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/order.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/signIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/signIn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/signUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/signUp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +27,7 @@
         <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -125,17 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/myProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/myProject/client/src/main/resources/com/example/client/css",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myProject\client\src\main\resources\com\example\client\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Work\Java\javaCodeDir\order\myProject\client\src\main\resources" />
     </key>
@@ -192,7 +129,7 @@
       <workItem from="1670169717705" duration="1551000" />
       <workItem from="1670174490236" duration="261000" />
       <workItem from="1670266843324" duration="919000" />
-      <workItem from="1670345184407" duration="1265000" />
+      <workItem from="1670345184407" duration="13458000" />
     </task>
     <servers />
   </component>

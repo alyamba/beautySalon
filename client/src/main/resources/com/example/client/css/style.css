@@ -1,0 +1,110 @@
+@font-face
+{
+    font-family: Press-Start-2P;
+    src: url("Montserrat-Regular.ttf");
+}
+
+.text{
+    -fx-font-family: Press-Start-2P;
+}
+
+.button{
+    -fx-background-radius: 12px;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 3.0, 0, 0.1, 3.0);
+    -fx-background-color:  #C91959;
+    -fx-font-size: 14px;
+}
+
+.button:hover{
+    -fx-background-color: #bd0245;
+}
+
+.button-return{
+    -fx-background-color: none;
+}
+.button-return:hover{
+    -fx-background-color: none;
+}
+
+.label{
+    -fx-font-size: 16px;
+}
+
+.label-big{
+    -fx-font-size: 24px;
+}
+
+.list-menu{
+    -fx-background-color: none;
+}
+
+.list-menu:hover{
+    -fx-background-color: #d88cba;
+}
+
+.table-view-window{
+    -fx-background-color: linear-gradient(to right, rgba(150, 0, 255, 0.4), #d88cba);
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+/*.table-view .corner {*/
+/*    -fx-background-color: transparent;*/
+/*}*/
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to right, #C91959, #d88cba);
+    -fx-background-radius: 5px 5px 5px 5px;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 0 0 4px 0;
+    -fx-text-background-color: white;
+}
+
+.column-table:hover {
+    -fx-border-color: transparent lightgray transparent transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell{
+    -fx-border-color: #d9d9d9;
+    -fx-background-color: #d88cba;
+    -fx-text-background-color: white;
+    -fx-font-size: 14px;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #d88cba;
+    -fx-text-background-color: #white;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #d88cba;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-row-cell:even{
+    -fx-background-color: #d88cba;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.select{
+    -fx-background-color: #d88cba;
+    -fx-text-background-color: white;
+}

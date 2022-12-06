@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -11,45 +12,55 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.SignInController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="900.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.SignInController">
    <children>  
       <Label alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" depthTest="DISABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" style="-fx-background-color: #C91959;" text="Привет, зайди в свой аккаунт!" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="Tahoma" size="24.0" />
          </font>
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor>
+         <styleClass>
+            <String fx:value="text" />
+            <String fx:value="label-big" />
+         </styleClass>
       </Label>
-      <VBox alignment="CENTER">
+      <VBox alignment="CENTER" styleClass="text">
          <children>
-            <TextField fx:id="userName" promptText="Логин">
+            <TextField fx:id="userName" promptText="Логин" styleClass="text">
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
             </TextField>
-            <PasswordField fx:id="userPassword" prefHeight="26.0" prefWidth="355.0" promptText="Пароль">
+            <PasswordField fx:id="userPassword" prefHeight="26.0" prefWidth="355.0" promptText="Пароль" styleClass="text">
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
                <padding>
                   <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                </padding>
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
             </PasswordField>
          </children>
          <padding>
             <Insets left="100.0" right="100.0" top="30.0" />
          </padding>
       </VBox>
-      <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#authorization" style="-fx-background-color: #C91959;" text="Войти" textFill="WHITE">
+      <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#authorization" styleClass="text" stylesheets="@css/style.css" text="Войти" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="Tahoma" size="14.0" />
          </font>
          <padding>
-            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
          </padding>
          <VBox.margin>
             <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
@@ -58,11 +69,17 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text fill="#717171" strokeType="OUTSIDE" strokeWidth="0.0" text="У вас еще нет аккаунта? " />
-      <Hyperlink fx:id="linkToRegistrationWindow" onAction="#goToRegistration" text="Так создайте его!" textFill="#c91959">
+      <Text fill="#717171" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="У вас еще нет аккаунта? ">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Text>
+      <Hyperlink fx:id="linkToRegistrationWindow" onAction="#goToRegistration" styleClass="text" text="Так создайте его!" textFill="#c91959">
          <VBox.margin>
             <Insets bottom="30.0" left="30.0" right="30.0" />
          </VBox.margin>
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
       </Hyperlink>
    </children>
 </VBox>

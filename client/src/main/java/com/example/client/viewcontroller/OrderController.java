@@ -112,8 +112,13 @@ public class OrderController implements Initializable {
             mainController.setLogin();
         }
     }
+    public void goToMain(ActionEvent event) {SceneContainer.changeScene("/main.fxml", event);
+//    TODO: передавать данные авторизованного пользователя
+    }
 
     public void setLogin(final String login) {
         this.login = login;
     }
+
+
 }
