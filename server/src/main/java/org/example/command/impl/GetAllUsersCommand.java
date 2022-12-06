@@ -21,6 +21,7 @@ public class GetAllUsersCommand implements Command {
             userMap.put("id", list.get(i).getId());
             userMap.put("name", list.get(i).getName());
             userMap.put("login", list.get(i).getLogin());
+            userMap.put("phone", list.get(i).getPhone());
 
             jsonObject.put("user" +i, userMap);
             size++;

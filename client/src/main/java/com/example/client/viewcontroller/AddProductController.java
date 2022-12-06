@@ -42,6 +42,10 @@ public class AddProductController {
         SceneContainer.changeScene("/mainAdmin.fxml", event);
     }
 
+    @FXML
+    void goToMain(ActionEvent event) {
+        SceneContainer.changeScene("/mainAdmin.fxml", event);
+    }
     public void setBoxData(List<String> list) {
         categoryBox.getItems().addAll(list);
     }

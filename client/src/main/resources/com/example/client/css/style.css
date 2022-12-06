@@ -58,9 +58,6 @@
     -fx-background-color: transparent;
 }
 
-/*.table-view .corner {*/
-/*    -fx-background-color: transparent;*/
-/*}*/
 
 .table-view .column-header-background{
     -fx-background-color: linear-gradient(to right, #C91959, #d88cba);
@@ -91,7 +88,7 @@
 
 .table-row-cell:hover {
     -fx-background-color: #d88cba;
-    -fx-text-background-color: #white;
+    /*-fx-text-background-color: #white;*/
 }
 
 .table-row-cell:odd{
@@ -107,4 +104,10 @@
 .select{
     -fx-background-color: #d88cba;
     -fx-text-background-color: white;
+}
+
+.label-page{
+    -fx-background-color: rgba(232, 232, 232, 0.93);
+    -fx-font-weight: 600;
+    -fx-background-radius: 8px;
 }

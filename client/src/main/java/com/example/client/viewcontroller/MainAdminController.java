@@ -64,9 +64,9 @@ public class MainAdminController {
             Map orderedItem = (Map) receivedObject.get("user" + i);
 
             User user = new User();
-            user.setId((Integer) orderedItem.get("id"));
             user.setName((String) orderedItem.get("name"));
             user.setLogin((String) orderedItem.get("login"));
+            user.setPhone((String) orderedItem.get("phone"));
             users.add(user);
         }
 

@@ -1,5 +1,6 @@
 package com.example.client.viewcontroller;
 
+import com.example.client.container.SceneContainer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,23 +22,13 @@ public class SessionEndWarningController {
     private Parent root;
 
     @FXML
-    void exit(ActionEvent event) throws Exception{
-        System.out.println("method exit");
-
-        FXMLLoader loader = new FXMLLoader(SignInController.class.getResource("signIn.fxml"));
-
-        root = loader.load();
-
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-
-        stage.show();
+    void exit(ActionEvent event) { SceneContainer.changeScene("/signIn.fxml", event);
     }
 
     @FXML
     void returnToMainPage(ActionEvent event) {
-
+        SceneContainer.changeScene("/main.fxml", event);
+        //    TODO: передавать данные авторизованного пользователя и оживить кнопку возврата
     }
 
 }

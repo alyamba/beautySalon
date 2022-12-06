@@ -25,14 +25,15 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class ShowUsersController implements Initializable {
-    @FXML
-    private TableColumn<User, Integer> idCol;
 
     @FXML
     private TableColumn<User, String> loginCol;
 
     @FXML
     private TableColumn<User, String> nameCol;
+
+    @FXML
+    private TableColumn<?, ?> phoneCol;
 
     @FXML
     private TableView<User> usertable;
@@ -46,9 +47,9 @@ public class ShowUsersController implements Initializable {
 
     @Override
     public void initialize(final URL url, final ResourceBundle resourceBundle) {
-        idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
-        nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
         loginCol.setCellValueFactory(new PropertyValueFactory<>("login"));
+        nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
+        phoneCol.setCellValueFactory(new PropertyValueFactory<>("phone"));
 
         usertable.setItems(observableList);
     }

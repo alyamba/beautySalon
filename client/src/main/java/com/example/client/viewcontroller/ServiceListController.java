@@ -1,5 +1,6 @@
 package com.example.client.viewcontroller;
 
+import com.example.client.container.SceneContainer;
 import com.example.client.model.OrderSelection;
 import com.example.client.model.Selection;
 import javafx.beans.value.ChangeListener;
@@ -49,5 +50,10 @@ public class ServiceListController implements Initializable {
 
     public void setData(List<OrderSelection> list) {
         observableSelections.addAll(list);
+    }
+
+
+    public void goToMain(ActionEvent event) {SceneContainer.changeScene("/main.fxml", event);
+//    TODO: передавать данные авторизованного пользователя и оживить кнопку возврата
     }
 }

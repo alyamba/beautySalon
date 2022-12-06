@@ -11,11 +11,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.MainAdminController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@com/example/client/css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.MainAdminController">
    <children>
       <VBox alignment="CENTER" prefWidth="600.0">
          <children>
-            <Label alignment="CENTER" prefWidth="722.0" text="Косметологический салон" textFill="#c91959">
+            <Label alignment="CENTER" prefHeight="147.0" prefWidth="621.0" styleClass="label-big" text="Косметологический салон" textFill="#c91959">
                <padding>
                   <Insets bottom="20.0" top="130.0" />
                </padding>
@@ -37,7 +37,7 @@
       </VBox>
       <VBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="300.0" style="-fx-background-color: #C91959;">
          <children>
-            <Button mnemonicParsing="false" onAction="#showUsers" style="-fx-background-color: none;" text="Просмотр данных пользователей" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#showUsers" styleClass="list-menu" text="Просмотр данных пользователей" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -48,7 +48,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button mnemonicParsing="false" onAction="#addCategory" style="-fx-background-color: none;" text="Добавить категорию" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#addProduct" styleClass="list-menu" text="Добавить продукт" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -59,18 +59,7 @@
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#addProduct" style="-fx-background-color: none;" text="Добавить продукт" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <VBox.margin>
-                  <Insets bottom="5.0" top="5.0" />
-               </VBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#logout" style="-fx-background-color: none;" text="Выход из аккаунта" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#logout" styleClass="list-menu" text="Выход из аккаунта" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

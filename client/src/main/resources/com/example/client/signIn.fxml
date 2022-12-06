@@ -12,9 +12,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="900.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.SignInController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.SignInController">
    <children>  
-      <Label alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" depthTest="DISABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" style="-fx-background-color: #C91959;" text="Привет, зайди в свой аккаунт!" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" blendMode="DARKEN" contentDisplay="CENTER" depthTest="DISABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="225.0" prefWidth="900.0" style="-fx-background-color: #C91959;" text="Привет, зайди в свой аккаунт!" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Tahoma" size="24.0" />
          </font>
@@ -26,7 +26,7 @@
             <String fx:value="label-big" />
          </styleClass>
       </Label>
-      <VBox alignment="CENTER" styleClass="text">
+      <VBox alignment="CENTER" prefHeight="195.0" prefWidth="900.0" styleClass="text">
          <children>
             <TextField fx:id="userName" promptText="Логин" styleClass="text">
                <padding>

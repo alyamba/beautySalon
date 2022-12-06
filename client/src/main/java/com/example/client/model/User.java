@@ -6,7 +6,7 @@ public class User {
     private String name;
 
     private String login;
-
+    private String phone;
     public Integer getId() {
         return id;
     }
@@ -29,5 +29,13 @@ public class User {
 
     public void setLogin(final String login) {
         this.login = login;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(final String phone) {
+        this.phone = phone;
     }
 }
