@@ -6,23 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1389bfcb-dd54-4ce2-8806-1bf4311d352a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/AddProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ServiceListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ServiceListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SessionEndWarningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SessionEndWarningController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ShowUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ShowUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/addProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/addProduct.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/example/client/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/example/client/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/item.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/mainAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/mainAdmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/order.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/serviceList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/serviceList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/sessionEndWarning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/sessionEndWarning.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/showUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/showUsers.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/signIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/signIn.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/GetAllUsersCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/GetAllUsersCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/org/example/command/impl/GetAllUsersCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/org/example/command/impl/GetAllUsersCommand.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +120,7 @@
       <workItem from="1670169717705" duration="1551000" />
       <workItem from="1670174490236" duration="261000" />
       <workItem from="1670266843324" duration="919000" />
-      <workItem from="1670345184407" duration="19435000" />
+      <workItem from="1670345184407" duration="20037000" />
     </task>
     <servers />
   </component>
