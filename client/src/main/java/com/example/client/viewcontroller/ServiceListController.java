@@ -39,6 +39,10 @@ public class ServiceListController implements Initializable {
 
     private ObservableList<OrderSelection> observableSelections = FXCollections.observableArrayList();
 
+    private String name;
+    private String phone;
+    private String login;
+
     @Override
     public void initialize(final URL url, final ResourceBundle resourceBundle) {
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
@@ -53,7 +57,22 @@ public class ServiceListController implements Initializable {
     }
 
 
-    public void goToMain(ActionEvent event) {SceneContainer.changeScene("/main.fxml", event);
-//    TODO: передавать данные авторизованного пользователя и оживить кнопку возврата
+    public void goToMain(ActionEvent event) {
+        SceneContainer.changeScene("/main.fxml", event);
+        MainController mainController = SceneContainer.getFxmlLoader().getController();
+
+        mainController.setLogin();
+        mainController.setPhone(this.phone);
+        mainController.setName(this.name);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    public void setLogin(String login) {
+        this.login = login;
     }
 }

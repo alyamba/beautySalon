@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1389bfcb-dd54-4ce2-8806-1bf4311d352a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ServiceListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ServiceListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SessionEndWarningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SessionEndWarningController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/serviceList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/serviceList.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +125,7 @@
       <workItem from="1670169717705" duration="1551000" />
       <workItem from="1670174490236" duration="261000" />
       <workItem from="1670266843324" duration="919000" />
-      <workItem from="1670345184407" duration="20037000" />
+      <workItem from="1670345184407" duration="23187000" />
     </task>
     <servers />
   </component>

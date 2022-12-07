@@ -21,6 +21,10 @@ public class SessionEndWarningController {
     private Scene scene;
     private Parent root;
 
+    private String login;
+    private String name;
+    private String phone;
+
     @FXML
     void exit(ActionEvent event) { SceneContainer.changeScene("/signIn.fxml", event);
     }
@@ -28,7 +32,21 @@ public class SessionEndWarningController {
     @FXML
     void returnToMainPage(ActionEvent event) {
         SceneContainer.changeScene("/main.fxml", event);
-        //    TODO: передавать данные авторизованного пользователя и оживить кнопку возврата
+        MainController mainController = SceneContainer.getFxmlLoader().getController();
+
+        mainController.setLogin();
+        mainController.setPhone(this.phone);
+        mainController.setName(this.name);
+    }
+
+    public void setLogin (String login) {
+        this.login = login;
+    }
+    public void setName (String name) {
+        this.name = name;
+    }
+    public void setPhone (String phone) {
+        this.phone = phone;
     }
 
 }

@@ -39,6 +39,8 @@ public class OrderController implements Initializable {
     private Map<String, Double> optionsMap = new HashMap<>();
 
     private String login;
+    private String name;
+    private String phone;
 
     @Override
     public void initialize(final URL url, final ResourceBundle resourceBundle) {
@@ -105,21 +107,35 @@ public class OrderController implements Initializable {
             System.out.println(jsonObject.toJSONString());
             ConnectionHandler.send(jsonObject);
 
-            System.out.println(ConnectionHandler.listen().toJSONString());
+            System.out.println("RESPONSE: " + ConnectionHandler.listen().toJSONString());
 
             SceneContainer.changeScene("/main.fxml", event);
             MainController mainController = SceneContainer.getFxmlLoader().getController();
+
             mainController.setLogin();
+            mainController.setPhone(this.phone);
+            mainController.setName(this.name);
         }
     }
     public void goToMain(ActionEvent event) {
         SceneContainer.changeScene("/main.fxml", event);
-        //  TODO: передавать данные авторизованного пользователя
+        MainController mainController = SceneContainer.getFxmlLoader().getController();
+
+        mainController.setLogin();
+        mainController.setPhone(this.phone);
+        mainController.setName(this.name);
     }
 
     public void setLogin(final String login) {
         this.login = login;
     }
+    public void setName(final String name) {
+        this.name = name;
+    }
+    public void setPhone(final String phone) {
+        this.phone = phone;
+    }
+
 
 
 }

@@ -78,21 +78,18 @@ public class MainController {
         orderController.initMap(selectionList);
         orderController.setOptionBoxData(selectionList);
         orderController.setLogin(login.getText().substring(7));
+        orderController.setName(firstName.getText().substring(5));
+        orderController.setPhone(userPhone.getText().substring(9));
     }
 
     @FXML
-    void logout(ActionEvent event) throws Exception{
-        System.out.println("method sessionEndWarning");
+    void logout(ActionEvent event) {
+        SceneContainer.changeScene("/sessionEndWarning.fxml", event);
 
-        FXMLLoader loader = new FXMLLoader(SignInController.class.getResource("/sessionEndWarning.fxml"));
-
-        root = loader.load();
-
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-
-        stage.show();
+        SessionEndWarningController sessionEndWarningController = SceneContainer.getFxmlLoader().getController();
+        sessionEndWarningController.setLogin(login.getText().substring(7));
+        sessionEndWarningController.setName(firstName.getText().substring(5));
+        sessionEndWarningController.setPhone(userPhone.getText().substring(9));
     }
 
     @FXML
@@ -119,6 +116,9 @@ public class MainController {
         SceneContainer.changeScene("/serviceList.fxml", event);
         ServiceListController serviceListController = SceneContainer.getFxmlLoader().getController();
         serviceListController.setData(selectionList);
+        serviceListController.setLogin(login.getText().substring(7));
+        serviceListController.setName(firstName.getText().substring(5));
+        serviceListController.setPhone(userPhone.getText().substring(9));
     }
 
     public void setName(String text) {
@@ -132,6 +132,10 @@ public class MainController {
     public void setLogin() {
         login.setText("Логин: " + loginStr);
     }
+
+//    public void setPassword(String password) {
+//        this.password = password;
+//    }
 
     public static void setLoginStr(final String loginStr) {
         MainController.loginStr = loginStr;

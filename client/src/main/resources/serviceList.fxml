@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" stylesheets="@com/example/client/css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="600.0" prefWidth="900.0" stylesheets="@com/example/client/css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.viewcontroller.ServiceListController">
    <children>
       <HBox prefHeight="34.0" prefWidth="900.0">
          <children>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" styleClass="button-return">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToMain" prefHeight="28.0" prefWidth="28.0" styleClass="button-return">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0">
                      <image>
