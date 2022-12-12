@@ -133,10 +133,6 @@ public class MainController {
         login.setText("Логин: " + loginStr);
     }
 
-//    public void setPassword(String password) {
-//        this.password = password;
-//    }
-
     public static void setLoginStr(final String loginStr) {
         MainController.loginStr = loginStr;
     }

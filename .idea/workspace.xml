@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1389bfcb-dd54-4ce2-8806-1bf4311d352a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/AddCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/addCategory.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/impl/AddCategoryCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainAdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ServiceListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/ServiceListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SessionEndWarningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/SessionEndWarningController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/serviceList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/serviceList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/example/client/viewcontroller/MasterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/mainAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/mainAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/masterControl.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/command/factory/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/command/factory/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/example/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/example/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/org/example/command/factory/CommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/org/example/command/factory/CommandFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/org/example/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/org/example/service/CategoryService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="CSS File" />
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,14 +64,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/myProject/client/src/main/resources/com/example/client/css",
+    "last_opened_file_path": "D:/5_sem/kursach_psp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -125,7 +140,13 @@
       <workItem from="1670169717705" duration="1551000" />
       <workItem from="1670174490236" duration="261000" />
       <workItem from="1670266843324" duration="919000" />
-      <workItem from="1670345184407" duration="23187000" />
+      <workItem from="1670345184407" duration="23628000" />
+      <workItem from="1670421659550" duration="8691000" />
+      <workItem from="1670502645037" duration="3656000" />
+      <workItem from="1670509581870" duration="8885000" />
+      <workItem from="1670526403224" duration="405000" />
+      <workItem from="1670526837885" duration="3615000" />
+      <workItem from="1670870922653" duration="1366000" />
     </task>
     <servers />
   </component>
@@ -147,11 +168,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/client/src/main/java/com/example/client/HelloApplication.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server/src/main/java/org/example/command/impl/GetPersonalOrdersCommand.java</url>
           <line>26</line>
           <option name="timeStamp" value="8" />
@@ -161,7 +177,16 @@
           <line>22</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/org/example/service/CategoryService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

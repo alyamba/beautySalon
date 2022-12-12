@@ -21,6 +21,28 @@ import java.util.List;
 import java.util.Map;
 
 public class MainAdminController {
+    @FXML
+    void addCategory(ActionEvent event) {
+        JSONObject sendingObject = new JSONObject();
+        sendingObject.put("requestType", "GET_CATEGORY");
+        ConnectionHandler.send(sendingObject);
+
+        JSONObject receivedObject = ConnectionHandler.listen();
+        int size = (int) receivedObject.get("size");
+
+        List<Category> categoryArrayList = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            Map categoryMap = (Map) receivedObject.get("category" + i);
+
+            Category category = new Category();
+            category.setName((String) categoryMap.get("name"));
+            categoryArrayList.add(category);
+        }
+
+        SceneContainer.changeScene("/addCategory.fxml", event);
+//        AddCategoryController addCategoryController = SceneContainer.getFxmlLoader().getController();
+//        addCategoryController.setBoxData(categoryArrayList.stream().map(selection -> selection.getName()).toList());
+    }
 
     @FXML
     void addProduct(ActionEvent event) {

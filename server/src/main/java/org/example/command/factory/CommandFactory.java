@@ -23,6 +23,8 @@ public class CommandFactory {
                 return new GetCategoryCommand();
             case "ADD_PRODUCT":
                 return new AddProductCommand(jsonObject);
+            case "ADD_CATEGORY":
+                return new AddCategoryCommand(jsonObject);
             default:
                 return new MissedCommand();
         }
